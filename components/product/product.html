@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(18) Product</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/97aa991169.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/product.css"> 
+    <link rel="stylesheet" href="/assets/fonts/themify-icons/themify-icons.css">
+    <link rel="shortcut icon" type="image/png" href="/assets/img/aoarsenal.jpg"/>
+</head>
+<body>
+    <!-- <div class="banner-top">
+        <img src="./assets/img/banner.webp" alt="">
+    </div> -->
+    
+    <div class="header ">
+        <div class="topbar row">
+            <div class="topbar-left col l-6 m-6 c-12">
+                <p href="/components/home/home.html"> Mở cửa: 7h30 đến 21h30, T7 và Chủ nhật 8h đến 22h</p>
+            </div>
+            <div class="topbar-right col l-6 m-6 c-12">
+                <div class="topbar-right-list">
+                    <div class="topbar-right-list-item">
+                        <i class="fa-solid fa-user"></i>
+                        <a href="/components/account/account.html">Tài khoản</a>
+                    </div>
+                    <div class="topbar-right-list-item">
+                        <i class="fa-solid fa-star"></i>
+                        <a href="https://www.thegioididong.com/mua-online-gia-re#game">Khuyến mãi hot</a>
+                    </div>
+                    <div class="topbar-right-list-item">
+                        <i class="fa-solid fa-location-pin"></i>
+                        <a href="https://www.thegioididong.com/sieu-thi-the-gioi-di-dong/ho-chi-minh"> Hệ thống cửa hàng</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mid-header">
+            <div class="container-header row grid wide">
+                <div class="container-header-1 col l-3 m-3 c-0">
+                    <a href="/components/home/home.html">
+                        <img src="/assets/img/logo.png" alt="" style="width:200px">
+                    </a>
+                </div>
+                <div class="container-header-2 col l-5 m-6 c-12">
+                    <div class="header-search">
+                        <input type="text" placeholder="    Nhập để tìm kiếm ..." >
+                        <i class="icon fa fa-search"></i>      
+                    </div>
+                </div>
+                <div class="container-header-3 col l-4 m-3 c-0">
+                    <div class="header-list">
+                        <i class="fa-solid fa-phone"></i>
+                        <div class="header-discription">
+                            <b>
+                                (028) 1234 4321 (10 line)
+                            </b>
+                            <p>
+                                DĐ: 0966 932 267
+                            </p>
+                        </div>
+                    </div>
+                    <div class="header-list">
+                        <i href="" class="fa-solid fa-cart-shopping"></i>
+                        <div class="header-discription">
+                            <a href="/components/cart/cart.html">
+                                <b>
+                                    (0) Sản phẩm
+                                </b>   
+                            </a>                                                                        
+                            <p>
+                                Giỏ hàng
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="header-menu">
+            <div class="header-menu-nav row grid wide">
+                <div class="menu-total">
+                    <div class="menu-nav">
+                        <div class="menu-title">
+                            <i class="fa-solid fa-bars"></i>
+                            <p>DANH MỤC SẢN PHẨM</p>
+                        </div>
+                        <div class="list-menu-header">
+                            <div class="list-item">
+                                <i class="fa-solid fa-shirt"></i>
+                                <p>ENGLAND PREMIER LEAGUE</p>
+                                <i class="fa-solid fa-angle-right"></i>
+                                <div class="list-item-after">
+                                </div>
+                                <div class="item-content row">
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">MANCHESTER UNITED FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">MANCHESTER CITY FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">CHELSEA FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">ARSENAL FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">LIVERPOOL FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">TOTTENHAM FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">WESTHAM UNITED FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">SOUTHAMTON FC KIT 2022-2023 </a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <i class="fa-solid fa-shirt"></i>
+                                <p>SPAIN LA LIGA</p>
+                                <i class="fa-solid fa-angle-right"></i>
+                                <div class="list-item-after">                                  
+                                </div>
+                                <div class="item-content row">
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">REAL MADRID FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">BARCELONA FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">ATLETICO MADRID FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">SEVILLA FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">REAL SOCIEDAD FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">REAL BETIS FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">CELTA VIGO FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">ESPANOL FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <i class="fa-solid fa-shirt"></i>
+                                <p>ITALIAN SERIA</p>
+                                <i class="fa-solid fa-angle-right"></i>
+                                <div class="list-item-after">                                   
+                                </div>
+                                <div class="item-content row">
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">JUVENTUS FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">AS ROMA FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">AC MILAN FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">INTER MILAN FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">NAPOLI FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">LAZIO FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">TORINO FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">GENOVA FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <i class="fa-solid fa-shirt"></i>
+                                <p>GERMANY BUNDESLIGA</p>
+                                <i class="fa-solid fa-angle-right"></i>
+                                <div class="list-item-after">                                    
+                                </div>
+                                <div class="item-content row">
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">BAYERN MUNCHEN FC KIT 2022-2023 </a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">BORUSSIA DORTMUND FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">RB LEIPZIG FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">BAYER LEVERKUSEN FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">SCHALKE 04 FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">WOLFSBURG FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">MAINZ 05 FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">HOFFENHEIM FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <i class="fa-solid fa-shirt"></i>
+                                <p>FRANCE LEAGUE A</p>
+                                <i class="fa-solid fa-angle-right"></i>
+                                <div class="list-item-after">                                 
+                                </div>
+                                <div class="item-content row">
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">PARIS SAINT-GERMAIN FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">NICE FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">MONACO FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">LILLE FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">OLYMPIQUE MARSEILLE FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">LENS FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">NANTES FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">OLYMPIQUE LYON FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <i class="fa-solid fa-shirt"></i>
+                                <p>VIETNAM V-LEAGUE</p>
+                                <i class="fa-solid fa-angle-right"></i>
+                                <div class="list-item-after">                                    
+                                </div>
+                                <div class="item-content row">
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">HÀ NỘI FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">HOÀNG ANH GIA LAI FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">TP.HỒ CHÍ MINH FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">HẢI PHÒNG FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">BÌNH ĐỊNH FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">NAM ĐỊNH FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">SÔNG LAM NGHỆ AN FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">THAN QUẢNG NINH FC KIT 2022-2023</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <i class="fa-solid fa-shirt"></i>
+                                <p>WORLD CUP 2022</p>
+                                <i class="fa-solid fa-angle-right"></i>
+                                <div class="list-item-after">                                   
+                                </div>
+                                <div class="item-content row">
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">BRAZIL KIT 2022</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">ENGLAND KIT 2022</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">FRANCE KIT 2022</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">GERMANY KIT 2022</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">PORTUGAL KIT 2022</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">VIETNAM KIT 2022</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">SPAIN KIT 2022</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-content-item col l-3 ">
+                                        <a href="">NETHERLANDS KIT 2022</a>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>Away</li>
+                                            <li>Third</li>
+                                            <li>Long T-shirt</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-menu-nav-list">
+                    <div class="header-menu-nav-list-item">
+                        <a href="home.html" class="header-menu-nav-item js-header-menu">
+                             <p>TRANG CHỦ</p>
+                        </a>
+                       
+                        <a href="#" class="header-menu-nav-item js-header-menu">
+                            <p>THANH TOÁN</p>
+                        </a>
+                        
+                        <a href="#" class="header-menu-nav-item js-header-menu">
+                            <p>GIỚI THIỆU</p>
+                        </a>
+                        
+                        <a href="#" class="header-menu-nav-item js-header-menu">
+                            <p>GIAO HÀNG</p>
+                        </a>
+
+                        <a href="#" class="header-menu-nav-item js-header-menu">
+                            <p>BẢO HÀNH</p>
+                        </a>
+                        
+                        <a href="#" class="header-menu-nav-item js-header-menu">
+                            <p>LIÊN HỆ</p>
+                        </a>             
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom grid wide">
+            <span>Trang chủ</span> 
+            <i class="fa-solid fa-angle-right"></i>
+            <span>Quần áo bóng đá câu lạc bộ Manchester United</span>
+        </div>
+    </div>    
+        
+
+    <!-- Product -->
+    <div class="product-info">
+        <div class="left-product">
+            <div class="big-image-product">
+                <img src="/assets/img/aoMU.jpg" alt="">
+            </div>
+            <div class="images-product">
+                <div class="small-image-product">
+                    <img src="/assets/img/aoMU.jpg" alt="" onclick="showImage(this.src)">
+                </div>
+                <div class="small-image-product">
+                    <img src="/assets/img/aomukhach.jpg" alt="" onclick="showImage(this.src)">
+                </div>
+                <div class="small-image-product">
+                    <img src="/assets/img/aomu3.jpg" alt="" onclick="showImage(this.src)">
+                </div>
+                <div class="small-image-product">
+                    <img src="/assets/img/aomudaitay.jpg" alt="" onclick="showImage(this.src)">
+                </div>
+            </div>
+        </div>
+
+        <div class="right-product">
+            <div class="product-name">Quần áo bóng đá câu lạc bộ Manchester United</div>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="main-price">
+                <div class="price">110.000đ</div>
+                <span>150.000đ</span>
+            </div>
+            <div class="size">
+                <p>Size :</p>
+                <div class="size-product active">S</div>
+                <div class="size-product">M</div>
+                <div class="size-product">L</div>
+                <div class="size-product">XL</div>
+                <div class="size-product">XXL</div>
+            </div>
+            <div class="quantity">
+                <p>Số lượng :</p>
+                <input type="number" min="1" max="5" value="1" name="" id="">
+            </div>
+            <div class="btn-box">
+                <button id="add-btn" class="cart-btn">
+                    <i class="fa-solid fa-plus add-btn-box"></i>
+                    Thêm
+                </button>
+                <button id="order-btn" class="buy-btn">
+                    <i class="fa-solid fa-shopping-cart order-btn-box"></i>
+                    Đặt hàng
+                </button>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Product-Related-->
+
+    <div class="product-related">
+        <div class="product-related-title">
+            <p>Bạn có thể thích</p>
+        </div>
+        <div class=" product-related-content">
+            <div class="product-related-item">
+                <img src="/assets/img/aoreal.jpg" alt="">                
+            </div>
+            <div class="product-related-item">
+                <img src="/assets/img/aomancity.jpg" alt="">
+            </div>
+            <div class="product-related-item">
+                <img src="/assets/img/aoarsenal.jpg" alt="">
+            </div>
+            <div class="product-related-item">
+                <img src="/assets/img/aophap.jpg" alt="">
+            </div>
+            <div class="product-related-item">
+                <img src="/assets/img/aomu3.jpg" alt="">
+            </div>
+            <div class="product-related-item">
+                <img src="/assets/img/aobodaonha.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-2-4 m-4 c-6">
+                    <h3 class="footer__heading">CHĂM SÓC KHÁNH HÀNG</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                        <a href="" class="footer-item-link">Trung Tâm Trợ Giúp </a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item-link">XiaoMing Blog</a>
+                        </li>
+                        <li class="footer-item">    
+                            <a href="" class="footer-item-link">XiaoMing Mall</a>
+                        </li>
+                        <li class="footer-item">      
+                            <a href="" class="footer-item-link">Hướng Dẫn Mua Hàng</a>
+                        </li>
+                        <li class="footer-item">  
+                            <a href="" class="footer-item-link">Hướng Dẫn Bán Hàng</a>
+                        </li>
+                        <li class="footer-item">  
+                            <a href="" class="footer-item-link">Thanh Toán</a>
+                        </li>
+                        <li class="footer-item">  
+                            <a href="" class="footer-item-link">Vận Chuyển</a>
+                        </li>
+                        <li class="footer-item">  
+                            <a href="" class="footer-item-link">Chăm Sóc Khách Hàng</a>
+                        </li>
+                        <li class="footer-item">  
+                            <a href="" class="footer-item-link">Chính Sách Bảo Hành</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l-2-4 m-4 c-6">
+                    <h3 class="footer__heading">VỀ XIAO MING SHOP</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                        <a href="" class="footer-item-link">Giới Thiệu Về Xiao Ming shop</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item-link">Tuyển Dụng</a>
+                        </li>
+                        <li class="footer-item">    
+                            <a href="" class="footer-item-link">Điều Khoản</a>
+                        </li>
+                        <li class="footer-item">      
+                            <a href="" class="footer-item-link">Chính Sách Bảo Mật</a>
+                        </li>
+                        <li class="footer-item">  
+                            <a href="" class="footer-item-link">Flash Sale</a>
+                        </li>  
+                        <li class="footer-item">  
+                            <a href="" class="footer-item-link">Kênh Người Bán</a>
+                        </li>         
+                        <li class="footer-item">  
+                            <a href="" class="footer-item-link">Liên Hệ Với Truyền Thông</a>
+                        </li>            
+                    </ul>
+                </div>
+                <div class="col l-2-4 m-4 c-6">
+                    <h3 class="footer__heading">THANH TOÁN</h3>
+                    <div class="footer-pay">
+                        <img src="/assets/img/thanhtoan.png" class="footer-pay-img"></img>
+                    </div>
+                    <h3 class="footer__heading">ĐƠN VỊ VẬN CHUYỂN</h3>
+                    <div class="footer-ship">
+                        <img src="/assets/img/vanchuyen.png" class="footer-ship-img"></img>
+                    </div>
+                    <!-- <div class="footer-download">
+                        <img src="./assets/img/taixuong.png" class="footer-download-img"></img>
+                    </div> -->
+                </div>
+                <div class="col l-2-4 m-4 c-6">
+                    <h3 class="footer__heading">THEO DÕI CHÚNG TÔI TRÊN</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <a href="https://www.facebook.com/xiaoming4869" class="footer-item-link special-item">Facebook</a>
+                        </li>
+                        <li class="footer-item">
+                            <i class="fa-brands fa-instagram"></i>
+                            <a href="https://www.instagram.com/liang_mingg/" class="footer-item-link special-item">Instagram</a>
+                        </li>
+                        <li class="footer-item"> 
+                            <i class="fa-brands fa-tiktok"></i>   
+                            <a href="https://www.tiktok.com/@xiaoming4869" class="footer-item-link special-item">Tiktok</a>
+                        </li>
+                        <li class="footer-item">   
+                            <i class="fa-brands fa-github"></i>   
+                            <a href="https://github.com/TieuMinhh" class="footer-item-link special-item">Github</a>
+                        </li>
+                        <li class="footer-item">  
+                            <i class="fa-brands fa-youtube"></i>
+                            <a href="https://www.youtube.com/channel/UC3cpdjGmTA6Joe2mUBmGEhQ" class="footer-item-link special-item">Youtube</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l-2-4 m-4 c-6">
+                    <h3 class="footer__heading">TẢI APP XIAO MING SHOP NGAY THÔI</h3>
+                    <div class="footer-download">
+                        <img src="/assets/img/taixuong.png" class="footer-download-img"></img>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-about-me">
+            <div class="footer-about-me-list">
+                <a href="https://www.facebook.com/xiaoming4869"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/liang_mingg/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UC3cpdjGmTA6Joe2mUBmGEhQ"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#/"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.tiktok.com/@xiaoming4869"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://github.com/TieuMinhh"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="footer-power">
+                <p>Powered by <a href="https://www.facebook.com/duchonglinh02/">小 明 先 生</a></p>
+            </div>
+        </div>
+    </footer>   
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.11/dist/sweetalert2.min.js"></script>    
+    <script>
+        let bigImage = document.querySelector('.big-image-product img');
+
+        function showImage(picture) {
+            bigImage.src = picture;
+        }
+
+
+        document.getElementById("add-btn").addEventListener('click', (event) => {
+            event.preventDefault();         
+                Swal.fire({
+                    title:'Thành công',
+                    text:'Thêm vào giỏ hàng thành công',
+                    icon :'success'
+                })
+            }
+        );
+
+        document.getElementById("order-btn").addEventListener('click', (event) => {
+            event.preventDefault();         
+                Swal.fire({
+                    title:'Thành công',
+                    text:'Đặt hàng thành công',
+                    icon :'success'
+                })
+            }
+        );
+
+    </script>
+</body>
+</html>
